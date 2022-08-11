@@ -1,0 +1,55 @@
+h1 {
+  font-family: "Dancing Script", cursive;
+  background: #ff1493;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 15px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}
+
+#about {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#servicio {
+  @extend #about;
+}
+
+@mixin img-format {
+    float: center;
+    padding: 0.5rem;
+    width: 80%;
+    height: 70vh;
+    margin-top: 30px;
+    background-color: $color-video;
+    border-radius: 1rem;
+}
+
+.row video, .serv{
+    @include img-format;
+}
+
+// MAPA 
+$mapBackground: (about:aliceblue, servicio:rgb(211, 208, 204), referencias:rgb(32, 32, 30),
+                galeria:rgb(255, 255, 255),contacto:aquamarine);
+
+@each $section, $color in $mapBackground {
+    ##{$section}{
+        background-color: $color;
+    }
+}

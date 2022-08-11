@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 100px 0;
+  text-align: center;
+}
+
+#footer {
+  .social-links {
+    margin: 0 0 40px 0;
+    display: flex;
+    float: right;
+    margin-right: 80px;
+  }
+
+  .r-img {
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 60%;
+    text-align: center;
+    width: 50px;
+    height: 60px;
+    transition: 0.3s;
+  }
+
+  .social-links a:hover {
+    background: #ffffff;
+    border-radius: 50%;
+    border-width: 50%;
+    line-height: 1;
+    transition: 0.3s;
+  }
+
+  .f-parrafo {
+    font-family: $font-lobster;
+    font-size: 20px;
+    color: #ffffff;
+    display: flex;
+    float: inline-start;
+
+    hr {
+      padding: 1rem;
+    }
+  }
+
+  .f-btn {
+    font-family: $font-dancing;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,89 @@
+.navbar {
+  font-family: $font-dancing;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 0;
+  display: grid;
+
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      text-decoration: underline;
+      border-radius: 1rem;
+      box-shadow: $nav-shadow;
+    }
+  }
+
+  a {
+    transition: 0.3s;
+
+    &:focus {
+      transition: 0.3s;
+    }
+  }
+}
+
+.sps--abv {
+  background-color: transparent;
+  color: #000;
+}
+
+.sps--blw {
+  background-color: rgb(229, 199, 247);
+  color: #fff;
+}
+
+.btn-cotizar {
+  background: $cotizar-btn;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-left: 50px;
+
+  &:hover {
+    background: $cotizar-btn;
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-cotizar {
+    margin: 0 15px 0 0;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
+
+#redes {
+  margin-left: 50px;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.i-redes {
+  width: 30px;
+  margin: 10px 10px;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
